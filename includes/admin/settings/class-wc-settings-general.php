@@ -52,7 +52,7 @@ class WC_Settings_General extends WC_Settings_Page {
 				'desc' 		=> __( 'This is the base location for your business. Tax rates will be based on this country.', 'woocommerce' ),
 				'id' 		=> 'woocommerce_default_country',
 				'css' 		=> 'min-width:350px;',
-				'default'	=> 'ES',
+				'default'	=> 'ES:01',
 				'type' 		=> 'single_select_country',
 				'desc_tip'	=>  true,
 			),

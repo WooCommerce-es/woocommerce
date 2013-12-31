@@ -11,3 +11,8 @@ sftp-config.json
 # Ignore all log files except for .htaccess
 /logs/*
 !/logs/.htaccess
+*.mo
+assets/css/woocommerce-base.less
+assets/css/woocommerce.css
+assets/css/woocommerce-base.less
+assets/css/woocommerce.css
