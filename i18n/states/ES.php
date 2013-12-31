@@ -5,7 +5,7 @@
  * @author   	Mikel Martin <mikel@zhenit.com>
  * @category 	i18n
  * @package 	WooCommerce/i18n
- * @version     2.1.o
+ * @version     2.1
  */
 global $states;
 
