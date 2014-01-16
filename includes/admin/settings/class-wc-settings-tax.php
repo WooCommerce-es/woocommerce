@@ -143,7 +143,7 @@ class WC_Settings_Tax extends WC_Settings_Page {
 			array(
 				'title'   => __( 'Display prices in the shop:', 'woocommerce' ),
 				'id'      => 'woocommerce_tax_display_shop',
-				'default' => 'excl',
+				'default' => 'incl',
 				'type'    => 'select',
 				'options' => array(
 					'incl'   => __( 'Including tax', 'woocommerce' ),
@@ -587,7 +587,7 @@ class WC_Settings_Tax extends WC_Settings_Page {
 
 										if ( strlen( $i ) < strlen( $postcode_parts[0] ) )
 											$i = str_pad( $i, strlen( $postcode_parts[0] ), "0", STR_PAD_LEFT );
-										
+
 										$postcode_query[] = "( '" . esc_sql( $i ) . "', $tax_rate_id, 'postcode' )";
 									}
 								}
@@ -686,7 +686,7 @@ class WC_Settings_Tax extends WC_Settings_Page {
 
 									if ( strlen( $i ) < strlen( $postcode_parts[0] ) )
 										$i = str_pad( $i, strlen( $postcode_parts[0] ), "0", STR_PAD_LEFT );
-									
+
 									$postcode_query[] = "( '" . esc_sql( $i ) . "', $tax_rate_id, 'postcode' )";
 								}
 							}
